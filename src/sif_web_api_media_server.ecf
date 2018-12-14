@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-16-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-16-0 http://www.eiffel.com/developers/xml/configuration-1-16-0.xsd" name="sif_web_api_media_server" uuid="593805BA-0242-44ED-B2E0-9E361950A343">
+	<target name="sif_web_api_media_server">
+		<root cluster="sif_web_api_media_server" class="SIF_WEB_API_MEDIA_SERVER" feature="make"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+		</file_rule>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<capability>
+			<catcall_detection support="none"/>
+			<concurrency support="none"/>
+			<void_safety support="all"/>
+		</capability>
+		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+		<library name="logging" location="$ISE_LIBRARY/library/runtime/logging/logging.ecf"/>
+		<library name="shared_logging" location="$ISE_LIBRARY/contrib/library/runtime/logging/shared/src/shared_logging.ecf" readonly="false"/>
+		<library name="sif_core" location="$ISE_LIBRARY/contrib/library/sif/core/src/sif_core.ecf" readonly="false"/>
+		<library name="sif_web" location="$ISE_LIBRARY/contrib/library/sif/web/src/sif_web.ecf" readonly="false"/>
+		<library name="sif_web_api_ewf" location="$ISE_LIBRARY/contrib/library/sif/web_api_ewf/src/sif_web_api_ewf_stand_alone.ecf" readonly="false"/>
+		<library name="time" location="$ISE_LIBRARY/library/time/time.ecf"/>
+		<library name="uuid" location="$ISE_LIBRARY/library/uuid/uuid.ecf"/>
+		<library name="wsf" location="$ISE_LIBRARY\contrib\library\web\framework\ewf\wsf\wsf.ecf"/>
+		<library name="wsf_extension" location="$ISE_LIBRARY/contrib/library/web/framework/ewf/wsf/wsf_extension.ecf"/>
+        <library name="criteria" location="$ISE_LIBRARY/unstable/library/pattern/criteria/criteria-safe.ecf"/>
+		<cluster name="sif_web_api_media_server" location="." recursive="true"/>
+	</target>
+</system>
