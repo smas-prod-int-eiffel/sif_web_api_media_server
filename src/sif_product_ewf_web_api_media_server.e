@@ -16,7 +16,6 @@ inherit
 			is_query_string_based_command_executer,
 			query_string_command_field_name,
 			has_media,
-			media_path,
 			manufacture_api_handler,
 			initialize
 		end
@@ -27,12 +26,6 @@ create
 	initialize
 
 feature -- Access
-
-	media_path: STRING
-			-- <Precursor>
-		do
-			Result := "assets/{media_name}"
-		end
 
 	is_query_string_based_command_executer: BOOLEAN
 		do
@@ -86,7 +79,7 @@ feature {NONE} -- Manufacturing
 	version: STRING
 			-- Version of the API to be used
 
-	manufacture_api_handler(a_command: SIF_COMMAND; a_methods: WSF_REQUEST_METHODS;
+	manufacture_api_handler(a_command: SIF_COMMAND[SIF_DAO[ANY]]; a_methods: WSF_REQUEST_METHODS;
 							a_resource_path: STRING; a_representation_type: like {SIF_REPRESENTATION_ENUMERATION}.type;
 							a_pagination_capable: like {SIF_WEB_API_REQUEST_HANDLER}.pagination_capable;
 							a_search: like {SIF_WEB_API_REQUEST_HANDLER}.search)

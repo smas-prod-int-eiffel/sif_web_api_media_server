@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "name": "media_configuration",
+      "configurations": [
+        {
+          "media_path": {
+            "type": "alpha_cfg_file",
+            "path": "/home/eiffel/media_assets"
+          }
+        }
+      ]
+    }
+  ]
+}

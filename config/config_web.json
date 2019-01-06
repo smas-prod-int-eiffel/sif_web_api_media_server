@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "web_configuration",
+      "configurations": [
+        {
+          "self": {
+            "type": "alpha_cfg_tcp_ip",
+            "scheme": "http",
+            "base_url": "localhost",
+            "port": 9090,
+            "external_port": 9090,
+            "version": "v1"
+          },
+          "media_server_resource_path": {
+            "type": "alpha_cfg_file",
+            "path": "/assets/assets/fonts/{media_name}"
+          }
+        }
+      ]
+    }
+  ]
+}
