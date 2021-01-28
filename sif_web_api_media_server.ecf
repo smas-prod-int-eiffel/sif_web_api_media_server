@@ -17,7 +17,7 @@
 			<void_safety support="all"/>
 		</capability>
 		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
-		<library name="config" location="\usr\local\eiffel\external\library\config\config.ecf"/>
+		<library name="config" location="$ISE_LIBRARY\external\library\config\config.ecf"/>
 		<library name="criteria" location="$ISE_LIBRARY\unstable\library\pattern\criteria\criteria-safe.ecf"/>
 		<library name="logging" location="$ISE_LIBRARY\library\runtime\logging\logging.ecf"/>
 		<library name="shared_logging" location="$ISE_LIBRARY\external\library\runtime\logging\shared\shared_logging.ecf" readonly="false"/>
