@@ -1,0 +1,13 @@
+on: [workflow_dispach]
+
+jobs:
+  testbox:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/smas-docker/eiffel-builder-19.05:202101290755
+    steps:  
+    - uses: actions/checkout@v2
+    - name: What OS is running
+      run: uname -a
+    - name: Show contents of checkout
+      run: ls -al /github/workspace
