@@ -3,8 +3,8 @@ on: [workflow_dispatch]
 jobs:
   testbox:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/smas-docker/eiffel-builder-19.05:202101290755
+    #container:
+    #  image: ghcr.io/smas-docker/eiffel-builder-19.05:202101290755
     steps:  
       - name: What OS is running
         run: uname -a
