@@ -7,7 +7,7 @@ jobs:
       image: ghcr.io/smas-docker/eiffel-builder-19.05:202101290755
     steps:  
       - name: Checkout the Eiffel library version needed
-        run: git clone https://github.com/smas-lib-int-eiffel/config.git $ISE_LIBRARY/external/library/config
+        run: git clone --branch v1.0.0 https://github.com/smas-lib-int-eiffel/config.git $ISE_LIBRARY/external/library/config
       - name: Show contents of eiffel library path
         run: ls -al $ISE_LIBRARY
       - name: Show contents of eiffel library path
