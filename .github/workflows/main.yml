@@ -8,5 +8,5 @@ jobs:
     steps:  
       - name: What OS is running
         run: uname -a
-      - name: Show contents of checkout
-        run: ls -al $ISE_EIFFEL
+      - name: Show contents of eiffel library path
+        run: ls -al $ISE_LIBRARY
