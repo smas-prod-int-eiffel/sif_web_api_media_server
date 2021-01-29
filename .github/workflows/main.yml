@@ -9,4 +9,4 @@ jobs:
       - name: What OS is running
         run: uname -a
       - name: Show contents of checkout
-        run: ls -al /usr/lccal/eiffel
+        run: ls -al /usr/local/eiffel
